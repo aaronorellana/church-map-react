@@ -1,5 +1,5 @@
 import React from "react";
-import useLanguageStore from "../useLanguageStore";
+import useLanguageStore from "../store/useLanguageStore";
 
 export default function Nav() {
   const language = useLanguageStore((state) => state.language);

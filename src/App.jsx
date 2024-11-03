@@ -4,11 +4,16 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+} from "@/src/components/ui/accordion";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/src/components/ui/card";
 import { MapPin, Mail, Phone, Globe, ChevronRight, User } from "lucide-react";
 import Flag from "react-world-flags";
-import useLanguageStore from "./useLanguageStore";
+import useLanguageStore from "./store/useLanguageStore";
 
 const translations = {
   en: {
