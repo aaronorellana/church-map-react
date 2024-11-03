@@ -530,7 +530,7 @@
  {
  "ID": 39,
  "title":"IPUL Foley",
- "address":"18109 U.S. 98 Foley, AL, 36535, Foley, AL, 36535",
+ "address":"18109 U.S. 98 Foley, AL, 36535",
  "latitude": 30.4080152,
  "longitude": -87.7153197,
  "city":"Foley",
@@ -874,7 +874,7 @@
  {
  "ID": 64,
  "title":"IPUL Moreno Valley",
- "address":"24445 Sunnymead bl Moreno Valley CA 92553",
+ "address":"24445 Sunnymead Boulevard, Moreno Valley, CA 92553",
  "latitude": 33.9383139,
  "longitude": -117.2366396,
  "city":"Moreno Valley",
@@ -1093,7 +1093,7 @@
  "latitude": 40.5234004,
  "longitude": -80.189469,
  "city":"Pittsburgh",
- "state":"Pittsburgh",
+ "state":"Pennsylvania",
  "country":"United states",
  "zip": 15108,
  "name":"Contactar Oficial IPUL",
@@ -1254,20 +1254,6 @@
  "name":"Pastor Bladimir Suárez",
  "email":"bladimir1031@hotmail.com",
  "phone":"973-905-1020"
- },
- {
- "ID": 91,
- "title":"IPUL Scranton",
- "address":"109 S Keyser Ave, Scranton, PA, 18504",
- "latitude": 41.4211149,
- "longitude": -75.6989461,
- "city":"Scranton",
- "state":"Pennsylvania",
- "country":"United states",
- "zip": 18504,
- "name":"Pastor José Octavio Valencia",
- "email":"valenciao@cs.com",
- "phone":"570-604-2739"
  },
  {
  "ID": 92,

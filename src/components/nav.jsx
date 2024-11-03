@@ -87,7 +87,7 @@ export default function Nav() {
               {language === "en" ? (
                 <>
                   <a
-                    href="/home"
+                    href="https://ipul.us/en/home/"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-primary hover:border-gray-300 hover:text-gray-700 uppercase"
                   >
                     Home
@@ -96,7 +96,7 @@ export default function Nav() {
               ) : (
                 <>
                   <a
-                    href="/inicio"
+                    href="https://ipul.us"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-primary hover:border-gray-300 hover:text-gray-700 uppercase"
                   >
                     Inicio

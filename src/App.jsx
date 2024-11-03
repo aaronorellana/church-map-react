@@ -41,56 +41,57 @@ const translations = {
 };
 
 const stateCodes = {
-  Alabama: "US-AL",
-  Alaska: "US-AK",
-  Arizona: "US-AZ",
-  Arkansas: "US-AR",
-  California: "US-CA",
-  Colorado: "US-CO",
-  Connecticut: "US-CT",
-  Delaware: "US-DE",
-  Florida: "US-FL",
-  Georgia: "US-GA",
-  Hawaii: "US-HI",
-  Idaho: "US-ID",
-  Illinois: "US-IL",
-  Indiana: "US-IN",
-  Iowa: "US-IA",
-  Kansas: "US-KS",
-  Kentucky: "US-KY",
-  Louisiana: "US-LA",
-  Maine: "US-ME",
-  Maryland: "US-MD",
-  Massachusetts: "US-MA",
-  Michigan: "US-MI",
-  Minnesota: "US-MN",
-  Mississippi: "US-MS",
-  Missouri: "US-MO",
-  Montana: "US-MT",
-  Nebraska: "US-NE",
-  Nevada: "US-NV",
-  "New Hampshire": "US-NH",
-  "New Jersey": "US-NJ",
-  "New Mexico": "US-NM",
-  "New York": "US-NY",
-  "North Carolina": "US-NC",
-  "North Dakota": "US-ND",
-  Ohio: "US-OH",
-  Oklahoma: "US-OK",
-  Oregon: "US-OR",
-  Pennsylvania: "US-PA",
-  "Rhode Island": "US-RI",
-  "South Carolina": "US-SC",
-  "South Dakota": "US-SD",
-  Tennessee: "US-TN",
-  Texas: "US-TX",
-  Utah: "US-UT",
-  Vermont: "US-VT",
-  Virginia: "US-VA",
-  Washington: "US-WA",
-  "West Virginia": "US-WV",
-  Wisconsin: "US-WI",
-  Wyoming: "US-WY",
+  Alabama: "us-al",
+  Alaska: "us-ak",
+  Arizona: "us-az",
+  Arkansas: "us-ar",
+  California: "us-ca",
+  Colorado: "us-co",
+  Connecticut: "us-ct",
+  Delaware: "us-de",
+  Florida: "us-fl",
+  Georgia: "us-ga",
+  Hawaii: "us-hi",
+  Idaho: "us-id",
+  Illinois: "us-il",
+  Indiana: "us-in",
+  Iowa: "us-ia",
+  Kansas: "us-ks",
+  Kentucky: "us-ky",
+  Louisiana: "us-la",
+  Maine: "us-me",
+  Maryland: "us-md",
+  Massachusetts: "us-ma",
+  Michigan: "us-mi",
+  Minnesota: "us-mn",
+  Mississippi: "us-ms",
+  Missouri: "us-mo",
+  Montana: "us-mt",
+  Nebraska: "us-ne",
+  Nevada: "us-nv",
+  "New Hampshire": "us-nh",
+  "New Jersey": "us-nj",
+  "New Mexico": "us-nm",
+  "New York": "us-ny",
+  "North Carolina": "us-nc",
+  "North Dakota": "us-nd",
+  Ohio: "us-oh",
+  Oklahoma: "us-ok",
+  Oregon: "us-or",
+  Pennsylvania: "us-pa",
+  "Puerto Rico": "pr",
+  "Rhode Island": "us-ri",
+  "South Carolina": "us-sc",
+  "South Dakota": "us-sd",
+  Tennessee: "us-tn",
+  Texas: "us-tx",
+  Utah: "us-ut",
+  Vermont: "us-vt",
+  Virginia: "us-va",
+  Washington: "us-wa",
+  "West Virginia": "us-wv",
+  Wisconsin: "us-wi",
+  Wyoming: "us-wy",
 };
 
 export default function Component() {
@@ -136,8 +137,12 @@ export default function Component() {
               value={state}
               className="border rounded-lg p-4"
             >
-              <AccordionTrigger className="px-4 py-2 hover:bg-muted flex items-center">
-                <Flag code={stateCodes[state]} className="w-6 h-6 mr-2" />
+              <AccordionTrigger className="px-4 py-2">
+                <img
+                  src={`https://flagcdn.com/${stateCodes[state]}.svg`}
+                  alt={`${state} flag`}
+                  className="w-14 mr-2"
+                />
                 <span className="text-xl font-semibold">{state}</span>
               </AccordionTrigger>
 
@@ -154,14 +159,14 @@ export default function Component() {
                         {addressList.map((address) => (
                           <Card
                             key={address.ID}
-                            className="overflow-hidden p-4 min-h-60"
+                            className="overflow-hidden p-4 min-h-80"
                           >
                             <CardHeader className="bg-muted">
-                              <CardTitle className="text-base">
+                              <CardTitle className="text-lg">
                                 {address.title}
                               </CardTitle>
                             </CardHeader>
-                            <CardContent className="pt-4">
+                            <CardContent className="">
                               <div className="space-y-2">
                                 <p className="flex items-center">
                                   <User className="w-4 h-4 mr-2 text-muted-foreground" />
