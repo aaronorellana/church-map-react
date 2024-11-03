@@ -141,7 +141,7 @@ export default function Component() {
             <AccordionItem
               key={state}
               value={state}
-              className="border rounded-lg p-4"
+              className="border rounded-lg p-1 sm:p-4"
             >
               <AccordionTrigger className="px-4 py-2">
                 <img
@@ -152,7 +152,7 @@ export default function Component() {
                 <span className="text-xl font-semibold">{state}</span>
               </AccordionTrigger>
 
-              <AccordionContent className="px-4 pt-2 pb-4 mt-8">
+              <AccordionContent className="px-1 pt-2 pb-4 mt-8 sm:px-4">
                 <div className="grid gap-6 md:grid-cols-2">
                   {Object.entries(cities)
                     .sort(([a], [b]) => a.localeCompare(b))
@@ -165,7 +165,7 @@ export default function Component() {
                         {addressList.map((address) => (
                           <Card
                             key={address.ID}
-                            className="overflow-hidden p-4 min-h-80"
+                            className="overflow-hidden p-0 min-h-80 sm:p-4"
                           >
                             <CardHeader className="bg-muted">
                               <CardTitle className="text-lg">
