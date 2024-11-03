@@ -121,6 +121,13 @@ export default function Component() {
     return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
   };
 
+  const getCompleteUrl = (url) => {
+    if (!url.startsWith("http://") && !url.startsWith("https://")) {
+      return `http://${url}`;
+    }
+    return url;
+  };
+
   return (
     <div className="container mx-auto p-4 max-w-7xl">
       {/* <div className="flex justify-between items-center mb-8">
@@ -204,7 +211,7 @@ export default function Component() {
                                   <p className="flex items-center">
                                     <Globe className="w-4 h-4 mr-2 text-muted-foreground" />
                                     <a
-                                      href={address.website}
+                                      href={getCompleteUrl(address.website)}
                                       target="_blank"
                                       rel="noopener noreferrer"
                                       className="hover:underline"
