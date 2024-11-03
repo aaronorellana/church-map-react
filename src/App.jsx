@@ -12,7 +12,6 @@ import {
   CardTitle,
 } from "@/src/components/ui/card";
 import { MapPin, Mail, Phone, Globe, ChevronRight, User } from "lucide-react";
-import Flag from "react-world-flags";
 import useLanguageStore from "./store/useLanguageStore";
 
 const translations = {
@@ -99,7 +98,7 @@ export default function Component() {
   const language = useLanguageStore((state) => state.language);
 
   useEffect(() => {
-    fetch("/public/data.json")
+    fetch("/data.json")
       .then((response) => response.json())
       .then((jsonData) => {
         const organizedAddresses = jsonData.reduce((acc, address) => {
@@ -124,9 +123,9 @@ export default function Component() {
 
   return (
     <div className="container mx-auto p-4 max-w-7xl">
-      <div className="flex justify-between items-center mb-8">
+      {/* <div className="flex justify-between items-center mb-8">
         <h1 className="text-3xl font-bold text-primary">{t.title}</h1>
-      </div>
+      </div> */}
 
       <Accordion type="single" collapsible className="w-full space-y-4">
         {Object.entries(addresses)
