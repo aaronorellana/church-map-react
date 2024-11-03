@@ -55,7 +55,7 @@ export default function Nav() {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
               {language === "en" ? (
-                <a href="/en">
+                <a href="https://ipul.us/en/home">
                   <img
                     className="block h-12 w-auto lg:hidden"
                     src="/logo-vertical-en-flat.svg"
@@ -68,7 +68,7 @@ export default function Nav() {
                   />
                 </a>
               ) : (
-                <a href="/">
+                <a href="https://ipul.us">
                   <img
                     className="block h-12 w-auto lg:hidden"
                     src="/logo-vertical-flat.svg"
