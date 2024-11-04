@@ -2111,5 +2111,19 @@
    "name":"Pastor Xavier Flores",
    "email":"ipultallahassee@gmail.com",
    "phone":"813-517-6503"
+  },
+  {
+   "ID": 169,
+   "title":"IPUL Trenton",
+   "address":"2 Carnegie Rd, Trenton, NJ 08648",
+   "latitude": 40.2682951,
+   "longitude": -74.7117836,
+   "city":"Trenton",
+   "state":"New Jersey",
+   "country":"United States",
+   "zip":"08648",
+   "name":"Pastor Josue Parra",
+   "email":"josueangelparra@yahoo.com",
+   "phone":"347-896-2197"
   }
 ]
